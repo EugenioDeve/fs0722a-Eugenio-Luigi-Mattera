@@ -1,0 +1,18 @@
+.check:checked + p{
+background-color: aqua; 
+}
+
+button + p{
+
+border: 1px solid black;
+}
+
+.mause:hover{
+    background-color: bisque;
+}
+.mause2:hover{
+    color: red;
+}
+table tr:nth-of-type(odd){
+    background-color: gray;
+}

@@ -1,0 +1,65 @@
+/* 
+Anatomia di un blocco CSS
+selettore{
+        proprietà/regole:valore;     mettere sempre punto e virgola
+
+}
+
+*/
+
+div{/*peso 1*/
+    color: red;
+}
+
+.testoblu{/*classe peso10*/
+    color: blue;
+}
+
+#parola{/*is peso 100*/
+    font-weight: bold;
+}
+
+
+/*
+selezione multipla e o gerarchiche
+div nel div, span nel div
+*/
+div div, div span {
+    background-color: aquamarine;
+}
+
+#menu li{
+    background-color: aqua;
+
+}
+
+
+#menu li > ul li {
+    background-color: brown;
+
+}
+
+
+/* asterisco uguale a tutto*/
+
+*{
+    font-size: 1rem;
+}
+
+/*posso selezionare id e piu classi per essere più specifico
+ul#menu.classe-prova.classe-prova2{
+
+}
+*/
+
+.quadrati-gialli.quadrati-con-bordi div{
+    background-color: purple;
+    border: 1px solid black;
+}
+
+.quadrati-gialli div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
