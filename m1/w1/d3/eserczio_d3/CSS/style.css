@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   margin:0px ;
+    padding-left:200px;
+    padding-right: 200px;
+background-color:#f9f9f9;
+height: 100%;
+}
+.resizable {
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    resize: both;
+    overflow: auto;
+  }
+
+#logo{
+    width: auto;
+    height: 50px;
+    display:block;
+    margin:0px auto;
+    text-align: center;  
+}
+
+
+
+.testo{
+    margin-top: 30px;
+    width: 100%;
+     height: 50px;
+     border-top: 2px solid rgb(244, 248, 157);
+    background-color: rgb(249, 249, 234);
+    text-align: center;
+    color: rgb(22, 189, 205);
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#titolo{
+    margin-top: 55px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.descrizione{
+    margin-top: 25px;
+    text-align: center;
+
+    
+}
+
+#focaccia{ 
+   width: 80%;
+   height: auto;
+   border-radius: 10px;
+    display:block;
+    margin:0px auto;
+    text-align: center;
+   
+
+}
+figcaption{
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+
+}
+.box{
+    margin-left: 180px;
+    border-left: 2px solid rgb(212, 229, 149);
+}
+.Preparazione{
+    color: rgb(255, 66, 66);
+    margin-left: 15px;
+}
+
+.ricetta{
+    color: rgba(0, 136, 255, 0.987);
+    margin-left: 15px;
+   
+}
+
+.margine{
+    margin-top: -15px;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 180px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+hr{
+    width: 80%;
+    border: 2px solid rgb(200, 221, 249);
+
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 180px;
+    font-weight: bold;
+}
+ul{
+    margin-left: 190px;
+}
+
+li{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+ol{
+    margin-left: 190px;
+}
+.readmore{
+    margin-left: 180px;
+
+}
+.continuo{
+    color: rgba(0, 136, 255, 0.987);
+
+}
