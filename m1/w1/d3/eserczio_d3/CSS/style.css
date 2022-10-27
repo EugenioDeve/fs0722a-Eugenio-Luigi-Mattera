@@ -6,13 +6,7 @@ body{
 background-color:#f9f9f9;
 height: 100%;
 }
-.resizable {
-    width: 500px;
-    height: 500px;
-    border: 1px solid;
-    resize: both;
-    overflow: auto;
-  }
+
 
 #logo{
     width: auto;
