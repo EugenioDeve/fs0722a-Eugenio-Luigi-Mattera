@@ -1,0 +1,201 @@
+/* Principale*/
+body{
+    
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    }
+
+main{
+    
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.5 ;
+}
+
+p{
+    color: #393d41; 
+ }
+.titoli_paragrafo, .paragrafo{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.titoli_paragrafo{
+    padding-top: 20px;
+}
+
+/* valori header e logo*/
+#header{
+    text-align: left;
+    background-color: black;
+    height: 100px;
+}
+#logo{
+padding-left: 130px;
+    padding-top: 20px;
+}
+
+/*banner*/
+
+#banner{
+    margin-bottom: 20px;
+    height: 450px;
+    background-image:url(/images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#titolo{
+    font-size: 2rem;
+}
+
+#titolo, #testo_titolo {
+    padding-top:  50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+/*bottone Partiamo*/
+#background_pulsante{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin-top: 70px;
+     background-color: #f04c2f;
+     border-radius: 10px;
+}
+#pulsante{
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f04c2f;
+}
+
+#color_button{
+    color: white;
+    text-decoration: none;
+}
+
+/*vantaggi */
+#vantaggi{
+    
+    padding-bottom: 60px;
+    padding-top: 100px;
+    margin-left: 15%;
+    margin-right: 50%;
+  
+}
+
+#testo_vantaggi{
+    margin-left: 50%;
+  text-align: left;
+  padding-bottom: 150px;
+
+    
+}
+#cerchio{
+    float: left;
+    width: 450px;
+    padding-left: 30px;
+   
+   
+border-top-left-radius: 50% 50%;
+border-top-right-radius: 50% 50%;
+border-bottom-right-radius: 50% 50%;
+border-bottom-left-radius: 50% 50%;
+}
+
+/*testimonianza*/
+#testimonianze{
+    height: 220px;
+    margin-top: 35px;
+    padding-top: 40px;
+    background-color: #e22d0e;
+}
+
+
+.testo_bianco{
+    color: white;
+}
+
+#paragrafo_test{
+    font-size: 0,7rem;
+    font-style: oblique;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+#testo_piccolo{
+    font-size: small;
+}
+/*schede*/
+#schede{
+
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:flex;
+    -webkit-flex-direction:row;
+    flex-direction:row;
+    -webkit-justify-content:center;
+    justify-content:center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+
+.immagini{
+    
+    width: 400px;
+    height: 280px;
+   
+    }
+/*bordo immagini*/
+.bordo{
+    
+    width: 400px;
+    border: 1px solid #dee1e3;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    
+
+}
+/*Footer*/
+#footer{
+    background-color: #25a2c3;
+    height: 330px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.testo_footer{
+    color:#c8e7f0;
+    font-size: 1rem;
+}
+
+#titolo_footer{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+#bordo_footer{
+    border: 1px solid #dee1e3;
+    width: 200px;
+    margin-top: 30px;
+}
+.copyright{
+    color:#c8e7f0;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    
+
+}
+

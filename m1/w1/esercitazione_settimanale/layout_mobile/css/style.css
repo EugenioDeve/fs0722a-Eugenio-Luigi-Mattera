@@ -1,5 +1,6 @@
 /* Principale*/
 body{
+    
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
@@ -7,6 +8,7 @@ body{
     }
 
 main{
+    
     text-align: center;
 }
 h1, h2, h3, h4, h5, h6{
@@ -44,7 +46,7 @@ padding-left: 130px;
 #banner{
     margin-bottom: 20px;
     height: 450px;
-    background-image: url(/images/banner.jpg);
+    background-image:url(/images/banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -80,7 +82,9 @@ padding-left: 130px;
 }
 
 /*vantaggi */
+
 #cerchio{
+   
     width: 300px;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -114,6 +118,8 @@ border-bottom-left-radius: 50% 50%;
     font-size: small;
 }
 /*schede*/
+
+
 .immagini{
     
     width: 400px;
@@ -121,6 +127,7 @@ border-bottom-left-radius: 50% 50%;
     }
 /*bordo immagini*/
 .bordo{
+    
     width: 400px;
     border: 1px solid #dee1e3;
     margin-top: 20px;
@@ -158,3 +165,4 @@ border-bottom-left-radius: 50% 50%;
     
 
 }
+
