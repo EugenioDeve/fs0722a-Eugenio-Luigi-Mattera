@@ -30,11 +30,12 @@ p{
 
 /* valori header e logo*/
 #header{
+    text-align: left;
     background-color: black;
     height: 100px;
 }
 #logo{
-
+padding-left: 130px;
     padding-top: 20px;
 }
 
