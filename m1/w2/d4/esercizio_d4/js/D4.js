@@ -92,7 +92,7 @@ const starWarsCharacters = [
   {
     name: "Obi-Wan Kenobi",
     height: "182",
-    mass: "77",
+    mass: "210",
     hair_color: "auburn, white",
     skin_color: "fair",
     eye_color: "blue-gray",
@@ -104,32 +104,85 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
 Crea una variabile chiamata "characters" e inserisci un array vuoto
 */
+let characters = [];
+console.log(characters);
 
 /* ESERCIZIO 2
 Usando un for loop, cicla l'array "starWarsCharacters" ed accedi alla proprietà "name". 
 Usa il valore contenuto inserendolo nell'array creato precedentemente. 
 Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
+for (let n in starWarsCharacters) {
+  characters[n] = starWarsCharacters[n].name;
+
+}
+console.log(characters);
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci un oggetto con questa struttura: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
 */
+let femaleCharacters = [{
+  name: 'Leia Organa',
+  hair_color: 'brown',
+  eye_color: 'brown',
+
+
+}];
+
+
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia come proprietà: blue, yellow, brown, red, blue-gray.
   ognuna di queste proprietà contiene un array vuoto
 */
+let eyeColor = {
+  blue: [],
+  yellow: [],
+  brown: [],
+  red: [],
+  blueGray: [],
+
+}
+console.log(eyeColor);
+
 
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
   */
-
+var j = 0;
+for (let carattere of starWarsCharacters) {
+  switch (carattere.eye_color) {
+    case "blue":
+      eyeColor.blue[j] = carattere;
+      break;
+    case "yellow":
+      eyeColor.yellow[j] = carattere;
+      break;
+    case "brown":
+      eyeColor.brown[j] = carattere;
+      break;
+    case "red":
+      eyeColor.red[j] = carattere;
+      break;
+    case "blueGrey":
+      eyeColor.blueGray[j] = carattere;
+      break;
+  }
+  j++;
+}
+console.log(eyeColor.yellow);
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
   */
 
+let m = 0, massaTotale = 0;
+while (m < 10) {
+  massaTotale += Number(starWarsCharacters[m].mass);
+  m++;
+}
+console.log("la somma delle masse è: " + massaTotale);
 /* ESERCIZIO 7
 
 Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"
@@ -143,6 +196,24 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
+console.log(massaTotale);
+switch (true) {
+  case massaTotale < 500:
+    console.log("Ship is under loaded");
+    break;
+  case massaTotale === 500:
+    console.log("Ship is half loaded");
+    break;
+  case massaTotale > 700 && massaTotale < 900:
+    console.log("Warning load is over 700");
+    break;
+  case massaTotale >= 900 && massaTotale < 1000:
+    console.log("CRITICAL");
+    break;
+  case massaTotale >= 1000:
+    console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
+    break;
+}
 
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
