@@ -1,0 +1,20 @@
+body {
+  margin-left: 10px;
+}
+h2 {
+  font-size: 3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 0;
+}
+h2,
+p,
+button {
+  margin-left: 20px;
+}
+p {
+  font-weight: bold;
+}
+div {
+  border: 2px solid rgb(31, 164, 247);
+  margin-top: 10px;
+}
