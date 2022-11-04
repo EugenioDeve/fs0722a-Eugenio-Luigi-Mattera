@@ -11,7 +11,7 @@
 
 <body>
   <div id="calcolatrice">
-    <form id="form" name="form">
+    <form name="form">
       <input class="area" name="monitor" value=""
         placeholder="011000110110100101100001011011110010000001101100011101010110001101100001" />
       <input name="last" type="hidden" value="" />
@@ -25,27 +25,27 @@
           <td><input type="button" value="&divide;" onclick="ar('/');" /></td>
         </tr>
         <tr>
-          <td><input type="button" value="7" onclick="digita(7);" /></td>
-          <td><input type="button" value="8" onclick="digita(8);" /></td>
-          <td><input type="button" value="9" onclick="digita(9);" /></td>
+          <td><input type="button" value="7" onclick="digit(7);" /></td>
+          <td><input type="button" value="8" onclick="digit(8);" /></td>
+          <td><input type="button" value="9" onclick="digit(9);" /></td>
           <td><input type="button" value="x" onclick="ar('*');" /></td>
         </tr>
         <tr>
-          <td><input type="button" value="4" onclick="digita(4);" /></td>
-          <td><input type="button" value="5" onclick="digita(5);" /></td>
-          <td><input type="button" value="6" onclick="digita(6);" /></td>
+          <td><input type="button" value="4" onclick="digit(4);" /></td>
+          <td><input type="button" value="5" onclick="digit(5);" /></td>
+          <td><input type="button" value="6" onclick="digit(6);" /></td>
           <td><input type="button" value="-" onclick="ar('-');" /></td>
         </tr>
         <tr>
-          <td><input type="button" value="1" onclick="digita(1);" /></td>
-          <td><input type="button" value="2" onclick="digita(2);" /></td>
-          <td><input type="button" value="3" onclick="digita(3);" /></td>
+          <td><input type="button" value="1" onclick="digit(1);" /></td>
+          <td><input type="button" value="2" onclick="digit(2);" /></td>
+          <td><input type="button" value="3" onclick="digit(3);" /></td>
           <td><input type="button" value="+" onclick="ar('+');" /></td>
         </tr>
         <tr>
-          <td><input type="button" value="0" onclick="digita(0);" /></td>
-          <td><input type="button" value="00" onclick="digita('00');" /></td>
-          <td><input type="button" value="," onclick="digita('.');" /></td>
+          <td><input type="button" value="0" onclick="digit(0);" /></td>
+          <td><input type="button" value="00" onclick="digit('00');" /></td>
+          <td><input type="button" value="," onclick="digit('.');" /></td>
           <td><input type="button" value="=" onclick="result();" /></td>
         </tr>
       </table>

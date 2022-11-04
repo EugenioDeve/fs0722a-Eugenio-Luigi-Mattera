@@ -1,4 +1,4 @@
-function digita(n) {
+function digit(n) {
     if (document.form.res.value == 'Y') {
         del();
     }
