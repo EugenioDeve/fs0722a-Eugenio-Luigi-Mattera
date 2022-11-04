@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+#calcolatrice {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+#calc input {
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  font-size: 15px;
+}
+input::placeholder {
+  font-size: 0.6rem;
+}
+
+.area {
+  border-radius: 5px;
+  margin-left: 0px;
+  background-color: #252525;
+  width: 98%;
+  height: 30px;
+  padding: 2px;
+  text-align: right;
+  font-size: 2rem;
+  color: #fff;
+}
