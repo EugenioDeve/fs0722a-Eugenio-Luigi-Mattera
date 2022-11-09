@@ -3,42 +3,172 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
+
+const fondi = function (ciao1, ciao2) {
+  let nstr1 = stringa1.slice(0, 2)
+  let nstr2 = stringa2.slice(-3)
+  let strf = nstr1.concat(nstr2)
+  console.log(strf.toUpperCase)
+
+}
+
+
+
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
  */
+const dispari = function () {
+  for (let i = 1; i < 100; i += 2) {
+    console.log(i);
+  }
+}
+
 
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
 
+const multipliCinque = function () {
+  for (let i = 5; i <= 100; i += 5) {
+    console.log(i)
+  }
+}
+
+
+
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
+const numeriRandom = function () {
+  let arr = [];
+  for (let i = 0; i < 10; i += 1) {
+    arr.push(Math.floor(Math.random() * 101));
+
+  }
+  console.log(arr)
+
+}
+
 
 /* ESERCIZIO 5
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
+const pari = function () {
+  let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  for (numero in numeri) {
+    if (numero % 2 == 0) {
+      console.log(numero)
+    }
+  }
+
+}
+
+
 
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
+const somma = function () {
+  let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  for (numero in numeri) {
+    tot = numeri.reduce((p, c) => p + c)
+    console.log(tot)
+  }
+}
 
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
+
+const incrementaUno = function () {
+  let numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  let numerin = []
+  for (n in numeri) {
+    numeri[n] = numeri[n] + 1;
+
+  }
+  console.log(numeri)
+}
 
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const lunghezza = function () {
+  let arr = ['ciao', 'io', 'sono', 'Giacomo']
+  let result = []
+  let i = 0
+  while (i <= ciao) {
+    result.push(arr[i].length)
+    i++
+  }
+  console.log(result)
+}
+
+
+
 /* ESERCIZIO 9 (EXTRA)
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
+/*const elimina=function(){
+  let numeri=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  i=0
+    while(i<=numeri.length){
+      if (numeri[i]%2==0){
+        numeri.splice(i,1)
+        
+      }
+      i+=1
+    }
+    console.log(numeri)
+}*/
+
+const eliminaPari = function (arr) {
+
+  let counter = 0
+  while (counter !== arr.length) {
+    if (arr[counter] % 2 === 0) {
+      arr.splice(counter, 1)
+
+    } else {
+      counter++
+    }
+    console.log(arr)
+
+  }
+}
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+
 
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
+
+function noDuplicati() {
+  for (u of arr) {
+    if (arr.indexOf(u) < arr.lastIndexOf(u)) {
+      return false
+    }
+  }
+  return true;
+}
+
+
+const genera = function () {
+  let arr = []
+  let i = 0
+  while (i < 10) {
+    rnd = Math.round(Math.random() * 10)
+    if (verificatuttidiversi(arr.concat([rnd]))) {
+      arr.push(rnd)
+      i++
+    }
+  }
+  return arr
+  console.log(arr)
+}
 
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
