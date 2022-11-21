@@ -1,0 +1,38 @@
+/*mobile first*/
+body {
+  background: red;
+}
+
+/*smartphone landascape*/
+@media screen and (min-width: 480px) {
+  body {
+    background: yellow;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+  body {
+    background: green;
+  }
+}
+
+/*laptop*/
+@media screen and (min-width: 1024px) {
+  body {
+    background: blue;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  body {
+    background: grey;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+}

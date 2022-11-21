@@ -1,0 +1,28 @@
+/* soluzine sbagliata 
+#testata {
+  background: url(images/beach-2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+@media only screen and (max-width: 480px) {
+  #testata {
+    display: none;
+  }
+}
+*/
+
+/*soluzione corretta, ragionare sempre mobile first*/
+#testata {
+  background: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #testata {
+    background: url(../images/beach-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+  }
+}

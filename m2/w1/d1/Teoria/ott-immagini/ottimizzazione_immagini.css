@@ -1,0 +1,17 @@
+#logo {
+  background: url(../images/logo.png) no-repeat;
+  width: 267px;
+  height: 70px;
+  background-color: yellow;
+}
+/*
+@media only screen and (-webkit-mii-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  #logo {
+    background: url(images/logo-2x.png) no-repeat;
+    background-size: 534px 140px;
+    width: 543px;
+    height: 140px;
+    background-color: #666;
+  }
+}
+*/
