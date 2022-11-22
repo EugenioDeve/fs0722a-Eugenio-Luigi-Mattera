@@ -1,0 +1,12 @@
+div.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  border: 2px solid #000;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+.testo {
+  padding-bottom: 2000px;
+}

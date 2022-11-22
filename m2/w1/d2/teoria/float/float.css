@@ -1,0 +1,89 @@
+body {
+  margin-top: 2px;
+}
+
+.container {
+  width: 1200px;
+  /*centrare pagina*/
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+header {
+  background-color: #00ffff;
+  text-align: center;
+}
+header h1 {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0;
+}
+nav {
+  height: 30px;
+  background-color: blueviolet;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  /*questo comando non fa vedere i punti della lista*/
+  list-style-type: none;
+}
+nav li {
+  /*float rompe la caratteristica di dicplay block e fa fluttuare gli elementi a sx e a dx,
+    i tag a cui assegnamo floa NON costribuiscono all'altezza del contenitore, quindi do un altezza a nav in questo caso*/
+  float: left;
+  border-right: 1px solid #fff;
+  padding: 0 97px;
+}
+nav li#ultimo {
+  border-right: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+}
+nav a:hover {
+  background-color: white;
+  color: blueviolet;
+}
+/*main*/
+aside {
+  float: left;
+  width: 300px;
+}
+
+#right {
+  margin-left: 80px;
+  float: right;
+  width: 214px;
+}
+
+footer {
+  background-color: blueviolet;
+  color: #fff;
+  text-align: center;
+  /*clear posizione il footer sotto senza affiancare nessun elemento al footer posizionandolo alla fine della pagina*/
+  clear: both;
+}
+
+footer p {
+  margin: 0;
+}
+section {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+article {
+  padding-top: 20px;
+}
+.left {
+  width: 40px;
+  float: left;
+}
+.right {
+  width: 40px;
+  float: right;
+}

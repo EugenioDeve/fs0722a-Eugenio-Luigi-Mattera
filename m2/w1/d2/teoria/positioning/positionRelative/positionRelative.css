@@ -1,0 +1,7 @@
+div.relative {
+  position: relative;
+  border: 3px solid red;
+  top: 30px;
+  left: 30px; /*sposto il mio div di 30px vesto destra rispetto alla sua posizione normale*/
+  /*settando le proprietà top,bottom,left,right a un div posizionato relativamente ci sarà uno spostamento dalla sua posizione normale */
+}

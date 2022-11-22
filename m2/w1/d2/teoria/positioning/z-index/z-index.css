@@ -1,0 +1,43 @@
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  border: 2px solid black;
+  position: relative;
+  height: 800px;
+}
+
+.container div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+#rosso {
+  background: red;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+#blu {
+  background: blue;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+}
+#verde {
+  background: green;
+  top: 60px;
+  left: 60px;
+  z-index: 2;
+}
+#viola {
+  background: violet;
+  top: 30px;
+  left: 5px;
+  z-index: 2;
+}
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1; /*in questo caso con z-index -1 l'immagine rimarrà sotto*/
+}

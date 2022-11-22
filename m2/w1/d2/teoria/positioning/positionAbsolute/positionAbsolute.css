@@ -1,0 +1,25 @@
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid red;
+  left: 50px; /* si spostano tutti e tre a sinistra perchè i due absolute sono posizionati rispetto all'ancestor(genitore più
+  vicino)*/
+}
+
+div.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0; /*in basso a destra*/
+  width: 200px;
+  height: 100px;
+  border: 3px solid blue;
+}
+div.absolute_2 {
+  position: absolute;
+  bottom: 0;
+  left: 0; /*in basso a sinistra*/
+  width: 190px;
+  height: 100px;
+  border: 3px solid green;
+}

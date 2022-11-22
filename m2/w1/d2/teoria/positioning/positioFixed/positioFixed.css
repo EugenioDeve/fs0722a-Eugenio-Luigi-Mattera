@@ -1,0 +1,13 @@
+div.fixed {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border: 3px solid blue;
+}
+
+.quarto {
+  float: left;
+  width: 25%;
+}
