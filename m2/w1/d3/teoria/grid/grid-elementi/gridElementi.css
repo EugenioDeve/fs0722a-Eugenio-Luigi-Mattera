@@ -1,0 +1,15 @@
+div div {
+  border: 1px solid #f00;
+  padding: 30px;
+}
+.container {
+  display: grid;
+  grid-template-columns: [iniz-col] 10% [col-2] 15% [col-3] auto [col-4] 15% [col-5] 10% [fin-col];
+  grid-template-rows: [iniz-rig] 25% [rig-2] 15% [rig-3] auto [fin-rig];
+}
+#col_2 {
+  grid-column-start: 2;
+  grid-column-end: col-5;
+  grid-row-start: iniz-rig;
+  grid-row-end: 3;
+}

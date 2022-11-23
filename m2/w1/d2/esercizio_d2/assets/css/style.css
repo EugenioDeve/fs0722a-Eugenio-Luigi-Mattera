@@ -154,6 +154,7 @@ h1 + p {
 }
 
 .social {
+  backdrop-filter: blur(20px);
   position: fixed;
   bottom: 90px;
   right: 0;
@@ -165,6 +166,7 @@ h1 + p {
 }
 
 .calendario {
+  backdrop-filter: blur(20px);
   height: 30px;
   position: fixed;
   right: 0;
@@ -175,6 +177,7 @@ h1 + p {
   border-radius: 5px;
 }
 .freccia_su {
+  backdrop-filter: blur(20px);
   position: fixed;
   right: 0;
   bottom: 5px;

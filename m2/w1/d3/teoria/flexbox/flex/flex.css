@@ -1,0 +1,47 @@
+.main-nav {
+  display: flex;
+  background: orangered;
+  color: white;
+  border-radius: 8px;
+  padding: 1em;
+  font-family: sans-serif;
+}
+/*class > tag significa i tag che sono contenuti nella classe */
+.main-nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /*è il contenitore dei tag <li>*/
+  flex: 3; /*è item di .main-nav e gli assegnamo un fattore di ingrandimento */
+}
+.main-nav li {
+  margin-right: 1em;
+}
+.main-nav form {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.main-nav input {
+  flex: 1;
+}
+
+.main-nav button {
+  background-color: white;
+  border: 0;
+  border-radius: 1em;
+  color: orangered;
+  padding: 0 1em;
+  margin-left: 0.3em;
+}
+
+@media screen and (max-width: 575px) {
+  .main-nav {
+    flex-direction: column;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+}
