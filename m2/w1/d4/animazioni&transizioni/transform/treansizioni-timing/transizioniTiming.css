@@ -1,0 +1,27 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {
+  transition-timing-function: linear; /*velocità costante*/
+}
+#div2 {
+  transition-timing-function: ease; /*parte piano, accelera, rallenta --> default*/
+}
+
+#div3 {
+  transition-timing-function: ease-in; /*bassa velocità iniziale*/
+}
+#div4 {
+  transition-timing-function: ease-out; /* bassa velocità finale*/
+}
+#div5 {
+  transition-timing-function: ease-in-out; /*bassa velocità iniziale e finale*/
+}
+
+div:hover {
+  width: 800px;
+}

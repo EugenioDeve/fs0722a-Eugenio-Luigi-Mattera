@@ -1,0 +1,97 @@
+#container {
+  display: flex;
+  background-color: grey;
+  padding: 50px;
+  flex-wrap: wrap;
+  border: 20px solid #000000;
+}
+#container div {
+  width: 200px;
+  height: 200px;
+
+  margin: 10px;
+}
+.gialli {
+  background-color: #e3d36c;
+  box-shadow: 2px 2px 10px black;
+}
+.violet {
+  background-color: #a470fd;
+  box-shadow: 2px 2px 10px black;
+}
+.celeste {
+  background-color: rgb(56, 207, 240);
+  box-shadow: 2px 2px 30px black;
+}
+
+#container div h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+  font-family: cursive;
+  margin-top: 50px;
+}
+#container div p {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: cursive;
+  color: black;
+}
+#postit1 {
+  transform: rotate(5deg);
+}
+#postit2 {
+  transform: rotate(-2deg);
+}
+#postit3 {
+  transform: rotate(2deg);
+}
+#postit4 {
+  transform: rotate(-6deg);
+}
+#postit5 {
+  transform: rotate(4deg);
+}
+#postit6 {
+  transform: rotate(-4deg);
+}
+#postit7 {
+  transform: rotate(-3deg);
+}
+#postit8 {
+  transform: rotate(-4deg);
+}
+
+#postit1:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit2:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit3:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit4:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit5:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit6:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit7:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}
+#postit8:hover {
+  transform: scale(1.2, 1.2) rotate(0deg);
+  z-index: 9;
+}

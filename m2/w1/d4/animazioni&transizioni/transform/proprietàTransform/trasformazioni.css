@@ -1,0 +1,26 @@
+div.a {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: rotate(45deg);
+}
+
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: skew(20deg, 20deg); /*skew asse x | skew asse y, con il meno (-) agiamo sogli angoli opposti*/
+}
+div.c {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: scaleY(1.5); /*scaleX | scaleY */
+}
+
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transform: rotate(45deg) scale(0.5);
+}

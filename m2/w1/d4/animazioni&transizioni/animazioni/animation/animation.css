@@ -1,0 +1,17 @@
+#myDIV {
+  margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  animation: mymove 5s infinite; /* dare un nome all'animazione,duration, timing function, delay, itration count, [direction], [fill mode] */
+}
+
+@keyframes mymove {
+  /*from*/
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,15 @@
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition-property: background-color, width, opacity;
+  transition-duration: 5s;
+  transition-delay: 2s;
+  transition-timing-function: linear;
+}
+
+#box:hover {
+  background-color: blue;
+  width: 500px;
+  opacity: 0.8;
+}

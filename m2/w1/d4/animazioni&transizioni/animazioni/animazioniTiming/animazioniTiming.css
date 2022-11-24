@@ -1,0 +1,63 @@
+#box {
+  width: 520px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#box1 {
+  border-color: orangered;
+  animation-name: animazione_box;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+#box2 {
+  border-color: blue;
+  animation-name: animazione_box;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#box3 {
+  border-color: violet;
+  animation-name: animazione_box;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+#box4 {
+  border-color: red;
+  animation-name: animazione_box;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+#box5 {
+  border-color: blueviolet;
+  animation-name: animazione_box;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animazione_box {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(400px, 0) rotate(90deg);
+    border-radius: 50px;
+  }
+}

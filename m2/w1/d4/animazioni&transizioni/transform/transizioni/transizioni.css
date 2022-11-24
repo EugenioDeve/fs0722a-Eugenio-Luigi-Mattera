@@ -1,0 +1,13 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /*transition: width 4s, height 4s;*/
+  transition: all 2s; /* all comprende sia width che height*/
+  transition-delay: 2s; /*fara partire la transizione dpo 2 secondi*/
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}

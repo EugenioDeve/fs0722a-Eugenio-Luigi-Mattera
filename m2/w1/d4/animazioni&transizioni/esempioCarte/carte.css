@@ -1,0 +1,65 @@
+#container {
+  width: 760px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding-top: 50px;
+}
+
+#carte {
+  margin: 0;
+  padding: 0;
+}
+#carte li {
+  list-style-type: none;
+  background: #333;
+  margin: 0;
+  color: #fff;
+  height: 450px;
+  width: 200px;
+  font-size: 12px;
+  display: block;
+  float: left;
+  border: 1px solid #666;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  text-shadow: 1px 1px 1px #000;
+  transition: all 0.5s ease-in-out;
+}
+#carta-1 {
+  transform: rotate(-20deg);
+  z-index: 1;
+  left: 150px;
+  top: 40px;
+}
+
+#carta-2 {
+  z-index: 2;
+  left: 70px;
+  top: 10px;
+}
+
+#carta-3 {
+  transform: rotate(20deg);
+  z-index: 3;
+  top: 40px;
+  right: 10px;
+}
+#carte li:hover {
+  z-index: 4;
+  background-color: #f90;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#carta-1:hover {
+  transform: scale(1.1) rotate(-18deg);
+}
+#carta-2:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+#carta-3:hover {
+  transform: scale(1.1) rotate(18deg);
+}
