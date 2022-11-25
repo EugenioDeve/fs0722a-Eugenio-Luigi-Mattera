@@ -1,0 +1,288 @@
+@media screen and (min-width: 400px) {
+}
+
+/*header*/
+header#sticky {
+  display: flex;
+  position: sticky;
+  top: 0;
+
+  border-bottom: 1px solid #000;
+  background: #ffc017;
+  padding: 5px;
+  height: 60px;
+  z-index: 4;
+  padding-right: 180px;
+  padding-left: 180px;
+  align-items: center;
+  font-family: "Spectral", serif;
+}
+header.active {
+  position: sticky;
+  background: white;
+  transition: 0.5;
+}
+header div img {
+  width: 150px;
+}
+header nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+header nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 2em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #191919;
+  font-weight: 600;
+}
+nav button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #191919;
+
+  border-radius: 20px;
+}
+nav button a {
+  text-decoration: none;
+  color: #191919;
+  color: white;
+  font-size: 12px;
+}
+/*-----------------------------------------------*/
+section {
+  font-family: "Spectral", serif;
+  height: 350px;
+  background-color: #ffc017;
+  padding: 1.5em 1em;
+  margin-bottom: 2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+}
+section div#sinistra {
+  width: 100%;
+  padding-left: 100px;
+  height: 290px;
+  position: relative;
+}
+#sinistra h2 {
+  font-size: 100px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+#sinistra p {
+  font-weight: 600;
+  font-size: 28px;
+  color: #191919;
+  word-wrap: break-word;
+}
+#sinistra button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: #191919;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+section #M {
+  margin-right: 0;
+}
+
+#M {
+  width: 800px;
+}
+
+/*--------------------------------------------------*/
+/*MAIN*/
+#container {
+  justify-content: center;
+}
+#box {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 230px;
+  border-bottom: 1px solid grey;
+}
+.numero {
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.icona {
+  float: left;
+
+  width: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.nome {
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+#box div {
+  width: 32%;
+  height: 100px;
+
+  padding-left: 10px;
+}
+
+#box div p {
+  font-family: "Roboto", sans-serif;
+
+  margin-left: 40px;
+  padding-bottom: 8px;
+}
+.testo {
+  font-size: 14px;
+  font-weight: bolder;
+}
+.data {
+  font-size: 10px;
+  font-weight: 300;
+  color: #191919;
+  opacity: 0.7;
+}
+/*-------------------------------------------------------------------------------*/
+#box_destra {
+  margin-right: 60px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 80px;
+}
+
+#box_destra > ul {
+  list-style-type: none;
+
+  margin-right: 5px;
+}
+#box_destra ul li {
+  padding-bottom: 20px;
+}
+#box_destra ul li button {
+  background-color: transparent;
+  color: #191919;
+  border: 1px solid gray;
+  height: 30px;
+  opacity: 0.7;
+}
+#lista2 {
+  border-top: 1px solid gray;
+  margin-left: 74%;
+  margin-right: 50px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 270px;
+}
+#lista2 > ul {
+  padding-left: 30px;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+#lista2 ul li {
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+#lista2 ul li a {
+  text-decoration: none;
+  color: #191919;
+  opacity: 0.7;
+}
+/*-------------------------------------------------------------------*/
+
+#box_2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: -360px;
+  width: 80%;
+}
+#box_2 div {
+  margin-top: 40px;
+  position: relative;
+  width: 50%;
+  height: 150px;
+}
+#box_2 div p {
+  font-family: "Roboto", sans-serif;
+}
+.nome_1 {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.testo_1 {
+  font-size: 22px;
+  font-weight: bolder;
+}
+.testo_2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #191919;
+  opacity: 0.7;
+}
+.data_1 {
+  font-size: 10px;
+  font-weight: 300;
+  color: #191919;
+  opacity: 0.7;
+}
+.imgAff {
+  position: absolute;
+  width: 180px;
+  top: 17px;
+  right: -180px;
+}
+
+.bookmark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.minibutton {
+  border: none;
+  background-color: rgb(212, 207, 207);
+  opacity: 0.8;
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+}
