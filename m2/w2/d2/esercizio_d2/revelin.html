@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Travel Agency</title>
+</head>
+
+<body>
+    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+            <!-- https://getbootstrap.com/docs/5.2/components/navbar/#brand -->
+            <a class="navbar-brand" href="#">
+                <img height="40" src="img/Evelin_R_travel.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="visually-hidden-focusable">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#week-deal">Saldi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#last-minute">Last Minute</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Recensioni</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex my-2 my-lg-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+                        Cerca
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- sezione introduttiva -> utilities (background, shadow, spacing) 
+                tipografie -> https://getbootstrap.com/docs/5.2/content/typography/
+                bottone -> https://getbootstrap.com/docs/5.2/components/buttons/
+            -->
+        <div class="text-center text-lg-start bg-light rounded shadow-sm p-5 pt-4 mt-5">
+            <h1 class="display-1 d-inline-block text-muted align-middle">Eveline-R</h1>
+            <p class="lead d-inline-block mb-0 align-middle"> — Feel the Freedom</p>
+            <hr class="my-2" />
+            <p class="fs-3 fst-italic  text-muted mb-5">Scopri le destinazioni più calde del momento!</p>
+            <a class="btn btn-info btn-lg px-5 fw-bold text-light" href="#day-deal" role="button">Prenota ora</a>
+        </div>
+
+        <section class="my-5 d-flex flex-column" id="week-deal">
+            <div class="d-flex justify-content-between">
+                <h3>Saldi</h3>
+                <!-- component -> collapse https://getbootstrap.com/docs/5.2/components/collapse/ -->
+                <button type="button" class="btn btn-sm btn-outline-info border-0 align-self-center mb-4"
+                    data-bs-toggle="collapse" data-bs-target="#collapseWeekDeal" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    Nascondi sezione
+                </button>
+            </div>
+            <!-- https://getbootstrap.com/docs/5.2/layout/grid/ 
+            https://getbootstrap.com/docs/5.2/layout/gutters/#horizontal-gutters 
+            -->
+            <div class="row collapse show g-2 g-md-3 g-xl-5" id="collapseWeekDeal">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- https://getbootstrap.com/docs/5.2/components/card/ -->
+                    <div class="card border border-2 border-info">
+                        <img src="img/prima.jpeg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border border-2 border-info">
+                        <img src="img/seconda.jpeg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card border border-2 border-info">
+                        <img src="img/terza.jpg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- https://getbootstrap.com/docs/5.2/utilities/display/#hiding-elements -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-md-none d-lg-block">
+                    <div class="card border border-2 border-info">
+                        <img src="img/quarta.jpeg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5 d-flex flex-column" id="welcome-summer">
+            <div class="d-flex justify-content-between">
+                <h3>Welcome Summer</h3>
+                <button type="button" class="btn btn-sm btn-outline-info border-0 align-self-center mb-4"
+                    data-bs-toggle="collapse" data-bs-target="#collapseWelcomeSummer" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    Nascondi sezione
+                </button>
+            </div>
+            <div class="row collapse show" id="collapseWelcomeSummer">
+                <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/quarta.jpeg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/terza.jpg " width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/quarta.jpeg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/terza.jpg " width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/quarta.jpeg" width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/terza.jpg " width="200" height="200" class="card-img-top" alt="maldives" />
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et possimus aliquid
+                                deserunt veritatis natus ullam perspiciatis temporibus minima repudiandae!
+                            </p>
+                            <a href="#" class="btn btn-info">Prenota</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- https://getbootstrap.com/docs/5.2/utilities/display/#hiding-elements -->
+        <section class="my-5 d-none d-sm-block" id="day-deal">
+            <h3 class="mb-4">Offerta del giorno</h3>
+
+            <div class="row">
+                <div class="col col-lg-8">
+                    <img src="img/prima.jpeg" class="img-fluid rounded shadow" alt="maldives" />
+                </div>
+                <div class="col col-lg-4">
+                    <h3 class="display-4 lh-1">Fushifaru Maldives</h3>
+                    <p class="font-monospace text-muted">15.01.2021-31.01.2021</p>
+                    <p class="lead"> Ville a partire da 500 €,<br> non fartele sfuggire!</p>
+                    <span class="badge rounded-pill text-bg-dark">Best offer</span>
+                </div>
+            </div>
+        </section>
+        <section class="my-5" id="last-minute">
+            <h3 class="mb-4">Last Minute</h3>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg mb-4">
+                    <div class="card shadow border-0">
+                        <img src="img/seconda.jpeg" class="card-img" alt="maldives" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg mb-4">
+                    <div class="card shadow border-0">
+                        <img src="img/seconda.jpeg" class="card-img" alt="maldives" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg mb-4">
+                    <div class="card shadow border-0">
+                        <img src="img/seconda.jpeg" class="card-img" alt="maldives" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg mb-4">
+                    <div class="card shadow border-0">
+                        <img src="img/seconda.jpeg" class="card-img" alt="maldives" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg mb-4">
+                    <div class="card shadow border-0">
+                        <img src="img/seconda.jpeg" class="card-img" alt="maldives" />
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg mb-4">
+                    <div class="card shadow border-0">
+                        <img src="img/seconda.jpeg" class="card-img" alt="maldives" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="testimonials" class="my-5 pt-5s">
+            <h3 class="text-center">Dicono di noi</h3>
+            <div class="d-flex pb-4">
+                <img class="border border-2 border-info rounded-circle" height="60"
+                    src="https://aeealberta.org/wp-content/uploads/2018/10/profile.png" />
+                <div class="px-4">
+                    <h6>Username</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex pb-4">
+                <img class="border border-2 border-info rounded-circle" height="60"
+                    src="https://aeealberta.org/wp-content/uploads/2018/10/profile.png" />
+                <div class="px-4">
+                    <h6>Username</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex pb-4">
+                <img class="border border-2 border-info rounded-circle" height="60"
+                    src="https://aeealberta.org/wp-content/uploads/2018/10/profile.png" />
+                <div class="px-4">
+                    <h6>Username</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer
+        class="container-fluid bg-dark text-light d-flex flex-column justify-content-center align-items-center py-5">
+        <!-- component -> modal (trigger) https://getbootstrap.com/docs/5.2/components/modal/#live-demo -->
+        <button type="button" class="btn btn-outline-secondary mb-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Contattaci
+        </button>
+
+        <span>© 2021 Kalina Travel LTD. All Rights Reserved.</span>
+    </footer>
+    <!-- component -> modal (finestra) https://getbootstrap.com/docs/5.2/components/modal/#live-demo -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="display-4 modal-title" id="exampleModalLabel">Contact us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- https://getbootstrap.com/docs/5.2/forms/form-control/ -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control shadow-sm" placeholder="Inserisci la tua email"
+                            aria-label="Email" aria-describedby="basic-addon1" />
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control shadow-sm" aria-label="With textarea"
+                            placeholder="Scrivi qui il tuo messaggio"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class="btn btn-transparent" data-bs-dismiss="modal">
+                        Chiudi
+                    </button>
+                    <button type="button" class="btn btn-info shadow px-5">Invia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        window.onload = function () {
+
+            const countTravels = function () {
+                const cards = document.querySelectorAll(".card")
+
+                // alert("there are " + cards.length + " travels displayed in the page")
+            }
+            countTravels()
+
+            const addBadge = function () {
+                const cards = document.querySelectorAll(
+                    "#welcome-summer .card"
+                );
+
+                for (let i = 0; i < cards.length; i++) {
+                    const card = cards[i];
+                    const span = `<span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>`;
+                    card.innerHTML += span;
+                }
+            };
+
+            addBadge(); //this adds hot badges on cards
+
+        };
+        const removeCards = function () {
+            const cards = document.querySelectorAll(".card");
+
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                card.remove();
+            }
+
+        };
+
+        // removeCards(); // this removes every card from the page the card if uncommented, 
+        // you should try to attach this function call to a button in the page or calling this from the browser's console
+    </script>
+
+
+</body>
+
+</html>
