@@ -1,0 +1,25 @@
+$template: dark; // cambio nome per vedere lo switch
+// template colors
+$bg-dark: #000;
+$fg-dark: #999;
+$bg-bright: #eeee99;
+$fg-bright: #eeee99;
+$bg-green: #00ff00;
+$fg-green: #99ff99;
+
+@if $template == dark {
+	body{
+		background-color: $bg-dark;
+		color: $fg-bright;
+	}
+} @else if $template == bright{
+	body{
+		background-color: $bg-bright;
+		color: $fg-dark;
+	}
+} @else {
+	body{
+		background-color: $bg-green;
+		color: $fg-green;
+	}
+}

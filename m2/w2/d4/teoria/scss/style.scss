@@ -1,0 +1,64 @@
+/*++++ extend ++++*/
+.box {
+    border: 1px solid #000;
+    background-color: green;
+    margin-bottom: 10px;
+    width: 200px
+}
+.mybox {
+    @extend .box;
+    font-size: 10px;
+}
+/*++++ keyword % ++++*/
+%box2 {
+    border: 1px solid #000;
+    background-color: blue;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.myfirstbox {
+    @extend %box2;
+    font-size: 10px;
+}
+
+.mysecondbox {
+    @extend %box2;
+    font-size: 20px;
+}
+
+/* mixin */ 
+@mixin baseButton($bgColor){ // button
+
+    padding: 10px 20px;
+    display: inline-block; 
+    text-transform: uppercase;
+
+    background: $bgColor; // green
+    outline: 1px solid $bgColor; // green
+    box-shadow: 0 0 10px $bgColor; // green
+    
+    color: white;
+    border: 1px solid white;
+    
+    &:hover{
+        color: $bgColor; // green
+        background: white;
+        box-shadow: none;      
+    }
+}
+
+button.green{
+    @include baseButton(green);
+}
+
+button.red{
+    @include baseButton(red);
+}
+button.blue{
+    @include baseButton(blue);
+}
+button.yellow{
+    @include baseButton(yellow);
+}

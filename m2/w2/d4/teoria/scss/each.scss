@@ -1,0 +1,5 @@
+@each $color in lightgray, burlywood, sienna, plum {
+    .colr_#{$color} {
+    background-color: #{$color};
+    }
+}
