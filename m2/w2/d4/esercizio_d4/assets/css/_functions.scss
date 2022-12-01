@@ -1,0 +1,7 @@
+@function margineProgressivo($incremento) {
+    @return $margineLaterale*$incremento;
+}
+
+@function em($incremento) {
+    @return $fontIniziale*$incremento;
+}

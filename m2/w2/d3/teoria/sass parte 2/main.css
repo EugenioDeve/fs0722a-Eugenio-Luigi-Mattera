@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* qui memorizzo un valore*/
+.btn {
+  display: inline;
+  padding: 20px;
+  color: orangered;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+body {
+  width: 90%;
+  color: orangered;
+}
+
+.container {
+  width: 90%;
+  padding: 20px; /*assegno il valore alla proprietà di un selettore*/
+}/*# sourceMappingURL=main.css.map */

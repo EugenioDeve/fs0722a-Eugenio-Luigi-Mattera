@@ -1,0 +1,92 @@
+nav {
+  display: block;
+}
+nav ul {
+  display: inline;
+  background: yellow;
+  border: 1px solid black;
+}
+
+/*selettori nidificati*/
+#main {
+  background-color: orangered;
+  /*vincolo lo stile al contenitore e non devo riscrivere */
+}
+#main p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+#main span {
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+#main a {
+  color: white;
+  text-decoration: none;
+}
+
+/*selettori nidificati 2 */
+#main2 {
+  background-color: orange;
+}
+#main2 div {
+  color: blue;
+}
+#main2 div .red {
+  color: green;
+}
+#main2 div .red a {
+  text-decoration: none;
+}
+
+/*nesting*/
+.esempio {
+  background-color: green;
+}
+.esempio h1 {
+  color: grey;
+}
+.esempio .titolo {
+  font-size: 100px;
+}
+.esempio .bottone {
+  background-color: black;
+  color: white;
+}
+
+/*keyword & (and) -> con & riscrivo il mio elemento genitore in questo caso .pippo*/
+#pippo {
+  color: orangered;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+#pippo:hover {
+  text-decoration: underline;
+}
+
+.esempio2 {
+  background-color: cadetblue;
+}
+.esempio2 h1 {
+  color: grey;
+}
+.esempio2 h1:hover {
+  font-size: 52px;
+}
+.esempio2 .bottone {
+  background-color: gray;
+}
+
+#main3 {
+  color: blueviolet;
+}
+#main3-sidebar {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#main4 {
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+}/*# sourceMappingURL=app.css.map */

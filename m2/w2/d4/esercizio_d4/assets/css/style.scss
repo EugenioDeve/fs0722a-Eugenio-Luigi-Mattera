@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "variables";
+@import "mixins";
+@import "functions";
+
+body {
+    font-size: $fontIniziale;
+    font-family: 'Roboto', sans-serif;
+    @include medium-screen {
+        font-size: em(1.2);
+    }
+}
+
+#main-menu ul {
+    display: flex;
+    list-style-type: none;
+    background-color: $bluscuro;
+    height: 50px;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px $bianco;
+    box-shadow: 2px 2px 2px black;
+    li {
+        padding-right: 15px;
+        font-style: italic;
+        a {
+            text-decoration: none;
+            color: $bianco;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-inline: $margineLaterale;
+    h1 {
+        font-weight: 400;
+    }
+    h2 {
+        font-weight: 400;
+    }
+    #content {
+        font-family: 'Open Sans', sans-serif;
+        @include medium-screen {
+            flex-basis: 60%;
+            margin-right: 15px;
+        }
+    }
+    #sidebar {
+        @include medium-screen {
+            flex-basis: 40%;
+        }
+    }
+    @include medium-screen {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-inline: margineProgressivo(5);
+    }
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        border-bottom: 1px dashed black;
+        line-height: 1.6;
+        &:hover {
+            background-color: darken($color: $bianco, $amount: 20%)
+        }
+    }
+}
+
+.warning-button {
+    background-color: $arancione;
+    color: $bianco;
+    border: 2px outset;
+    height: 30px;
+    &:hover {
+        background-color: darken($color: $arancione, $amount: 15%);
+        cursor: pointer;
+    }
+}
+
+#introduction {
+    p {
+        a{
+            text-decoration: none;
+            color: $arancione;
+            font-style: italic;
+            &:hover {
+                color: darken($color: $arancione, $amount: 15%);
+            }
+        }
+    }
+}
+
+#promo {
+    p {
+        a{
+            text-decoration: none;
+            color: $arancione;
+            font-style: italic;
+            &:hover {
+                color: darken($color: $arancione, $amount: 15%);
+            }
+        }
+    }
+}
+
+#footer {
+    height: 75px;
+    background-color: $celeste;
+}

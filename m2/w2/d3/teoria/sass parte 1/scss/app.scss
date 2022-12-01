@@ -1,0 +1,97 @@
+nav {
+    display: block;
+    ul {
+        display: inline;
+        background: yellow;
+        border: 1px solid black;
+    }
+}
+
+/*selettori nidificati*/
+#main{
+    background-color: orangered;
+    /*vincolo lo stile al contenitore e non devo riscrivere */
+    p{
+        font-size: 1.5em;
+        margin-bottom: 10px ;
+    }
+    span{
+        font-size: 1.2em;
+        padding-left: 10px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+/*selettori nidificati 2 */
+#main2{
+    background-color: orange;
+    div{
+        color: blue;
+        .red{
+            color: green;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*nesting*/
+.esempio{
+  background-color: green;
+  h1{
+    color: grey;
+}
+    .titolo{
+        font-size: 100px;
+    }
+
+.bottone{
+    background-color: black;
+    color: white;
+
+}
+
+}
+
+/*keyword & (and) -> con & riscrivo il mio elemento genitore in questo caso .pippo*/ 
+
+#pippo{
+    color: orangered;
+    font-size: 1.5em;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.esempio2{
+    background-color: cadetblue;
+    h1{
+        color: grey;
+        &:hover{font-size: 52px;}
+    }
+    .bottone{
+        background-color: gray;
+    }
+}
+
+#main3{
+    color: blueviolet;
+    &-sidebar{
+        border: 1px solid black;
+        padding: 10px;
+    }
+}
+
+
+#main4{
+    font: {
+        family: Georgia;
+        size: 1.5em;
+        weight: bold ;
+    }
+}

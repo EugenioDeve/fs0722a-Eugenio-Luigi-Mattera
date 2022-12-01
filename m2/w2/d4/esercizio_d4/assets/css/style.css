@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 21.6px;
+  }
+}
+
+#main-menu ul {
+  display: flex;
+  list-style-type: none;
+  background-color: navy;
+  height: 50px;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px white;
+  box-shadow: 2px 2px 2px black;
+}
+#main-menu ul li {
+  padding-right: 15px;
+  font-style: italic;
+}
+#main-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+#main-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-inline: 20px;
+}
+#main h1 {
+  font-weight: 400;
+}
+#main h2 {
+  font-weight: 400;
+}
+#main #content {
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  #main #content {
+    flex-basis: 60%;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #main #sidebar {
+    flex-basis: 40%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #main {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 100px;
+  }
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#sidebar ul li {
+  border-bottom: 1px dashed black;
+  line-height: 1.6;
+}
+#sidebar ul li:hover {
+  background-color: #cccccc;
+}
+
+.warning-button {
+  background-color: orange;
+  color: white;
+  border: 2px outset;
+  height: 30px;
+}
+.warning-button:hover {
+  background-color: #b37400;
+  cursor: pointer;
+}
+
+#introduction p a {
+  text-decoration: none;
+  color: orange;
+  font-style: italic;
+}
+#introduction p a:hover {
+  color: #b37400;
+}
+
+#promo p a {
+  text-decoration: none;
+  color: orange;
+  font-style: italic;
+}
+#promo p a:hover {
+  color: #b37400;
+}
+
+#footer {
+  height: 75px;
+  background-color: rgb(0, 166, 255);
+}/*# sourceMappingURL=style.css.map */
