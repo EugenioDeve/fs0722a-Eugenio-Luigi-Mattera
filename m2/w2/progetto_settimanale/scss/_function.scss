@@ -1,0 +1,7 @@
+@function adaptiveTextColor($backgroundLightness) {
+    @if(lightness($backgroundLightness) > 70%) {
+        @return black;
+    } @else {
+        @return white;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Page Site Bootstrap & SASS</title>
+  <meta name="description" content="Sviluppo di un one page site con Bootstrap & SASS">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <!------------------------------inizio navbar------------------------------------>
+  <nav class="gradientBg navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand text-light" href="#">BootPro</a>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#Testi">Servizi</a>
+          <a class="nav-link" href="#contatti">Contatti</a>
+
+          <a class="nav-link" href="https://www.whatsapp.com/?lang=it"><i class="bi bi-whatsapp"></i></a>
+          <a class="nav-link" href="https://www.twitch.tv/"><i class="bi bi-twitch"></i></a>
+
+          <a class="nav-link" href="https://discord.com/"><i class="bi bi-discord"></i></a>
+          <a class="nav-link" href="https://twitter.com/login?lang=it"><i class="bi bi-twitter"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!------------------------------fine navbar------------------------------------>
+  <!------------------------------------------------------------------------------>
+  <main>
+    <section id="skyline" class="container-fluid d-block px-4">
+      <h1 class="mt-3">La nostra passione si erge sopra ogni cosa</h1>
+      <p class="lh-lg">Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura, ché la diritta via era
+        smarrita. Ahi quanNel mezzo del cammin di nostra vita mi ritrovai per una selva oscura, ché la diritta via era
+        smarrita..</p>
+      <button id="newsletterBtn" type="button" class="btn">Iscriviti alla lista contatti</button>
+    </section>
+
+    <section id="Testi" class="container-fluid px-4">
+      <div class="row p-4">
+        <div class="text-center col-lg-4 pb-3">
+          <span class="Icon_lorem"><i class="bi bi-briefcase-fill"></i></span>
+          <h2 class="subtitle">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="text-center col-lg-4 pb-3">
+          <span class="Icon_lorem"><i class="bi bi-person-plus-fill"></i></span>
+          <h2 class="subtitle">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="text-center col-lg-4 pb-3">
+          <span class="Icon_lorem"><i class="bi bi-binoculars-fill"></i></span>
+          <h2 class="subtitle">Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#969696" fill-opacity="0.3"
+        d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+
+    <section class="px-4">
+      <h2 class="subtitle text-center pb-3">Partnership</h2>
+      <div class="row">
+        <div class="my-3 col-lg-3 d-flex justify-content-center pb-3">
+          <span><img class="aziende_logo" src="img/company-1.png" alt="accenture"></span>
+        </div>
+        <div class="my-3 col-lg-3 d-flex justify-content-center pb-3">
+          <span><img class="aziende_logo" src="img/company-2.png" alt="fedex"></span>
+        </div>
+        <div class="my-3 col-lg-3 d-flex justify-content-center pb-3">
+          <span><img class="aziende_logo" src="img/company-3.png" alt="netflix"></span>
+        </div>
+        <div class="my-3 col-lg-3 d-flex justify-content-center pb-3">
+          <span><img class="aziende_logo" src="img/company-4.png" alt="tim"></span>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#969696" fill-opacity="0.3"
+        d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#969696" fill-opacity="0.3"
+        d="M0,192L60,197.3C120,203,240,213,360,192C480,171,600,117,720,112C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+
+    <section class="pb-5 px-4">
+      <h2 class="subtitle text-center pb-5">Le opinioni dei nostri clienti</h2>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" pause="hover" data-bs-ride="carousel">
+        <div class="carousel-inner w-75 mx-auto">
+          <div class="carousel-item active">
+            <p class="text-center lh-lg"> One
+              morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+              horrible vermin. HOne morning, when Gregor Samsa woke from troubled dreams, he found himself transformed
+              in his bed into a horrible vermin.</p>
+            <img src="img/reviews/reviews-1.jpg" class="carousel_Img d-block mx-auto rounded-circle py-4" alt="cliente">
+            <p class="text-center client_name">Jamie Batty</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center lh-lg"> One
+              morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+              horrible vermin. HOne morning, when Gregor Samsa woke from troubled dreams, he found himself transformed
+              in his bed into a horrible vermin.</p>
+            <img src="img/reviews/reviews-2.jpg" class="carousel_Img d-block mx-auto rounded-circle py-4" alt="cliente">
+            <p class="text-center client_name">Jessie Winter</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center lh-lg"> One
+              morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+              horrible vermin. HOne morning, when Gregor Samsa woke from troubled dreams, he found himself transformed
+              in his bed into a horrible vermin.</p>
+            <img src="img/reviews/reviews-3.jpg" class="carousel_Img d-block mx-auto rounded-circle py-4" alt="cliente">
+            <p class="text-center client_name">Mike Winter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!------------------------------------------------------------------------------------------------------------------>
+  <footer id="contatti" class="gradientBg py-5 text-center">
+    <div class="container-fluid row pb-4">
+      <h3 class="col-lg-3 pb-4">BootPro</h3>
+      <div class="col-lg-3">
+        <h4>Mission & Vision</h4>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="col-lg-3">
+        <h4>Dove siamo</h4>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+      </div>
+      <div class="col-lg-3">
+        <h4>Contatti</h4>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+      </div>
+    </div>
+    <p>&copy; Eugenio per Epicode School</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

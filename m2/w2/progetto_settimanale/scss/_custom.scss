@@ -1,0 +1,69 @@
+$palette: (
+    "main-colour": #6610F2,
+    "gradient-fading": #6e1ef0,
+    "secondary-colour": #fd2751,
+    "background-lorem": #F5F5F5,
+);
+
+.gradientBg {
+    background: linear-gradient(to top, map-get($palette, "main-colour"), map-get($palette, "gradient-fading"));
+    color: adaptiveTextColor(map-get($palette, "main-colour"));
+    .nav-link {
+        color: map-get($palette, "secondary-colour");
+        &:hover {
+            color: lighten($color: map-get($palette, "secondary-colour"), $amount: 20%);
+        }
+    }
+}
+
+
+
+#skyline {
+    background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+    background-color: map-get($palette, "background-lorem");
+    background-position-y: 35%;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 300;
+    color: adaptiveTextColor(map-get($palette, "background-lorem"));
+}
+
+#newsletterBtn {
+    background-color: map-get($palette,"main-colour");
+    color: adaptiveTextColor(map-get($palette, "main-colour"));
+    &:hover {
+        background-color: lighten($color: map-get($palette, "main-colour"), $amount: 10%);
+    }
+}
+
+#Testi {
+    background-color: map-get($palette,"background-lorem");
+    color: adaptiveTextColor(map-get($palette, "background-lorem"));
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 45px;
+}
+
+.aziende_logo {
+    width: 140px;
+}
+
+.carousel_Img {
+    width: 100px;
+}
+
+.client_name {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.Icon_lorem {
+    font-size: 46px;
+}
+

@@ -1,0 +1,59 @@
+.gradientBg {
+  background: linear-gradient(to top, #6610F2, #6e1ef0);
+  color: white;
+}
+.gradientBg .nav-link {
+  color: #fd2751;
+}
+.gradientBg .nav-link:hover {
+  color: #fe8ca2;
+}
+
+#skyline {
+  background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+  background-color: #F5F5F5;
+  background-position-y: 35%;
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 300;
+  color: black;
+}
+
+#newsletterBtn {
+  background-color: #6610F2;
+  color: white;
+}
+#newsletterBtn:hover {
+  background-color: #8540f5;
+}
+
+#Testi {
+  background-color: #F5F5F5;
+  color: black;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 45px;
+}
+
+.aziende_logo {
+  width: 140px;
+}
+
+.carousel_Img {
+  width: 100px;
+}
+
+.client_name {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.Icon_lorem {
+  font-size: 46px;
+}/*# sourceMappingURL=app.css.map */
