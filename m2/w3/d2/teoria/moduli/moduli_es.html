@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduli</title>
+</head>
+<body>
+    <script type="module">
+        import { User } from './moduli/User.js';
+        import { Student } from './moduli/Student.js';
+        import { Teacher } from './moduli/Teacher.js';
+
+        var utente = new User("Mario", "Rossi", 30);
+        var studente = new Student("Giuseppe", "Verdi", 20);
+        var professore = new Teacher("Carlo", "Bianchi", 54);
+
+        studente.courses = ["Web DEsign", "OOP"];
+        professore.skills = ["HTML", "CSS", "JS"];
+
+        console.log(utente, studente, professore);
+    </script>
+</body>
+</html>
