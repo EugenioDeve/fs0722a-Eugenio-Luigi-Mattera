@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+</head>
+<body>
+    <!--
+        problemi di javascript: 1. tende a diventare disordinato (e quindi difficile fare manutenzione)
+        2. poca capacità di abbracciare le caratteristiche dell'orientamento ad oggetti
+        3. il controllo del tipo di dato
+        4. non c'è controllo degli errori (non c'è debug in fase di compilazione)
+        -> typescript "Typescript è javascript per lo sviluppo su scala di applicazioni"
+        differenze 1. è un linguaggio fortemente tipizzato (dichiaro i tipi di dati)
+        2. è orientato agli oggetti
+        3. è contemporaneamente un linguaggio e un insieme di strumenti
+        TypeScript è Javascript più alcune funzionalità aggiuntive
+        TypeScript (.ts) è un superset tipizzato di Javascript (.js)
+        TypeScript viene COMPILATO in js (sono i file .js che aggancio poi al browser)
+        Dalle conoscenze base di javascript aggiungo sintassi dedicate di TypeScript e poi compilo da .ts a .js
+        Il codice TypeScript viene convertito nel suo equivalente javascript per essere eseguito
+        Il codice compilato è compatibile con qualsiasi framework, libreria etc javascript esistente
+
+        Perché usare TypeScript?
+        - transpiler -> mentre interpreto il codice .ts per generare l'output .js ho il controllo degli errori
+        - strong static typing -> sia il controllo del tipo di dato, sia una sintassi per dedurlo/modificarlo
+        Componenti di TypeScript
+        - linguaggio (sintassi, keyword, annotazione di tipo)
+        - Compiler (tsc) converte le istruzione TypeScript nell'equivalente Javascript
+        - TypeScript language service -> servizio che aiuta la compilazione del codice .ts
+        >>>>> https://www.typescriptlang.org/play?#code/ <<<<<<<<
+        - qualsiasi script Javascript è anche codice TypeScript valido (quindi posso fare il passaggio gradualmente)
+
+        passaggi
+        1. salvo il file in formato .ts
+        2. apro il terminale
+        3. tsc + nome del file .ts (controllo di essere nella cartella del file)
+        4. node + nome del file .js (eseguo nel terminale il console log)
+
+        flag del compilatore
+        --help (stampa la guida)
+        --watch (controlla le modifiche ai file e li ricompila)
+        --module (carica moduli esterni)
+        --target (imposta la versione ECMA di destinazione)
+        --out (compilare più file in un unico output)
+        lista completa -> https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+        tsconfig.json
+        https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+        https://www.typescriptlang.org/tsconfig
+        watch -> https://www.typescriptlang.org/docs/handbook/configuring-watch.html
+    
+        alternativa è usare tsc + nome del file
+        posso compilare più file tsc file1.ts, file2.ts, file3.ts
+
+        regole di sintassi basilari
+        - nomenclatura degli identificatori (regole molto simili a js)
+        -> possono includere caratteri e cifre ma non possono iniziare con una cifra
+        -> non possono usare caratteri speciali ad eccezione di $ e _
+        -> non possono essere parole chiave (switch, for, while, this, static, try, extends...)
+        -> devono essere undici
+        -> case sensitive (fa distinzione tra maiuscole e minuscole)
+        -> non possono contenere spazi
+        ok -> firstName, first_name, num1, $result
+        ko -> Var, first name, first-name, 1number
+        - TypeScript ignora gli spazi (uso spazi e tab per tenere il codice più ordinato)
+        - i ; sono facoltativi (se metto più istruzioni su una riga li devo separare con ;)
+        - i commenti possono essere single line // o multi riga /* */
+        - TypeScript è Javascript orientato agli oggetti 
+        -> consideriamo un programma come una raccolta di oggetti che comunicano tra loro tramite metodi
+        -> gli oggetti rappresentano un entità (hanno tre caratteristiche stato, comportamento, identità)
+        -> gli oggetti hanno delle classi cioè dei modelli su ciu vengono creati
+        -> gli oggetti hanno dei metodi per comunicare tra di loro
+
+        Tipi di dati in TypeScript
+        - number - string - boolean 
+        - null          -> la variabile è impostata su un valore che non è definito 
+        - undenfined    -> la variabile non ha alcun valore
+        
+        - void -> assenza di valore -> lo uso quando una funzione non restisuisce alcun valore
+        function myFunc():void {
+            console.log("Messaggio");
+        }
+        - lo uso sulle funzione perché se dichiaro una variabile:void poi potrò assegnare solo valori null e undefined
+        
+        - any -> la variabile contiene qualsiasi tipo di dato (come javascript)
+        var myVar:any = 123;
+        myVar = "Una stringa";
+        myVar = true;       // assume dinamicamente qualsiasi valore come in javascript
+
+        i tipi definiti dall'utente: enum, classi, interfacce, array, tuple
+    -->
+</body>
+</html>
