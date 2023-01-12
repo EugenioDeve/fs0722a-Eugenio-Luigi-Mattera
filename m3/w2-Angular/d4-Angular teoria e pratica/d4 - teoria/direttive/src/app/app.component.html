@@ -1,0 +1,84 @@
+<div class="container text-center">
+    <!-- Direttiva di attributo -->
+    <h1 appColora [defaultColor]="'cyan'">Ciao</h1>
+
+    <h3>
+        Hello <span [appColora]="'#a6574e'" [defaultColor]="'blue'">World!</span>
+    </h3>
+
+    <!-- Direttiva di modifica template -->
+    <button type="button" class="btn btn-primary" (click)="active = !active">Toggle</button>
+
+    <!-- Modo 1: utilizzo della direttiva -->
+    <h3 *ngIf="active">Riga di testo predefinita</h3>
+    <h3 *appComparsa="active">{{'Riga di testo alternativa' | uppercase}}</h3>
+
+    <!-- Modo 2: If alternativi -->
+    <!-- <h3 *ngIf="active">Riga di testo predefinita</h3>
+    <h3 *ngIf="!active">Riga di testo alternativa</h3> -->
+
+    <!-- Modo 3: ng-template -->
+    <h2>Clicca per vedere i nostri prodotti di punta!</h2>
+    <button type="button" class="btn btn-primary" (click)="mostra = !mostra">Elenco</button>
+    <h3 *ngIf="mostra; else nuovo">
+        <table class="table table-bordered">
+            <tr>
+                <th>NOME</th>
+                <th>CATEGORIA</th>
+                <th>PREZZO</th>
+            </tr>
+            <tr>
+                <td>prodotto 1</td>
+                <td>categoria 1</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>prodotto 2</td>
+                <td>categoria 2</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>prodotto 3</td>
+                <td>categoria 3</td>
+                <td>15000</td>
+            </tr>
+        </table>
+    </h3>
+    <ng-template #nuovo>
+        <table class="table table-bordered">
+            <tr>
+                <th>NOME</th>
+                <th>CATEGORIA</th>
+                <th>PREZZO</th>
+                <th>SPECIFICHE</th>
+                <th>DISPONIBILITÀ</th>
+                <th>SPEDIZIONE</th>
+            </tr>
+            <tr>
+                <td>prodotto 1</td>
+                <td>categoria 1</td>
+                <td>12000</td>
+                <td>lkjdgs;dkfjgs;ldkfjg</td>
+                <td>15 pz</td>
+                <td>3 gg</td>
+            </tr>
+            <tr>
+                <td>prodotto 2</td>
+                <td>categoria 2</td>
+                <td>10000</td>
+                <td>lkjdgs;dkfjgs;ldkfjg</td>
+                <td>20 pz</td>
+                <td>10 gg</td>
+            </tr>
+            <tr>
+                <td>prodotto 3</td>
+                <td>categoria 3</td>
+                <td>15000</td>
+                <td>lkjdgs;dkfjgs;ldkfjg</td>
+                <td>10 pz</td>
+                <td>7 gg</td>
+            </tr>
+        </table>
+    </ng-template>
+
+</div>
