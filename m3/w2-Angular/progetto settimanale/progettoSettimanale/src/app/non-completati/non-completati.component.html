@@ -1,0 +1,5 @@
+<!-- INPUT -->
+<app-form-nuovo (addEvent)="addTodo($event)"></app-form-nuovo>
+<!-- LISTA -->
+<h1>TODO NON COMPLETATI</h1>
+<app-lista [todos]="t" [compl]="false" (buttonEvent)="completa($event)"></app-lista>

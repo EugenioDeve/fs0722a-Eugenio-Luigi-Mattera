@@ -1,0 +1,14 @@
+<ul class="list-group">
+    <li class="list-group-item" aria-disabled="true" *ngFor="let t of todos">
+        {{t.id}} - {{t.title}}
+        <!-- <button *ngIf="completa==true; else elimina">Completa</button>
+        <ng-template #elimina>
+            <button >Elimina</button>
+        </ng-template> -->
+        <!-- ngContent appare solo una volta e non per ogni iterazione dell'ngFor quindi non è adatto -->
+        <!-- <ng-content></ng-content> -->
+
+        <!-- useremo un parametro boolean in input per caprie che pulsante visualizzare -->
+        <button class="btn" [ngClass]="{'bg-warning': compl, 'bg-success': !compl}" (click)="completaElimina(t.id)">{{compl? "Elimina":"Completa"}}</button>
+    </li>
+</ul>
